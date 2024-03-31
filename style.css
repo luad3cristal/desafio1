@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family1: "Space Grotesk", sans-serif;
+  --font-family2: "Inter", sans-serif;
+
+  --details-color: #e07b67;
+  --background-color: #121214;
+  --header-background-color: #17171a;
+  --input-background-color: #202024;
+  --cards-border-color: #252529;
+  --cards-content-color: #afabb6;
+  --main-text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--main-text-color);
+}
+
+header {
+  background-color: var(--header-background-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  height: 20vh;
+}
+
+#logo {
+  font-family: var(--font-family1);
+  font-size: 40px;
+
+  margin: 20px 0 10px;
+}
+
+#logo #span1 {
+  color: var(--details-color);
+}
+
+#input {
+  background-color: var(--input-background-color);
+  background-image: url("./assets/search.svg");
+  background-position: 10px;
+  background-repeat: no-repeat;
+  background-size: 25px;
+
+  border: 2px solid var(--cards-border-color);
+  border-radius: 8px;
+  padding: 8px 16px 8px 48px;
+
+  min-width: 65vw;
+
+  font-size: 15px;
+  color: var(--cards-content-color);
+}
