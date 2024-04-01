@@ -132,14 +132,14 @@ ion-icon:hover {
   cursor: pointer;
 }
 
-@media (max-width: 416px) {
+@media (max-width: 416px) and (min-width: 375px) {
   .cards {
     max-width: 65%;
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 375px) and (min-width: 325px) {
   .cards {
-    max-width: 70%;
+    max-width: 75%;
   }
 }
