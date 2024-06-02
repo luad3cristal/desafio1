@@ -1,28 +1,30 @@
 let heart = document.querySelector("#heart")
-let heart1 = document.querySelector("#heart1")
 let heart2 = document.querySelector("#heart2")
-let c1 = heart.getAttribute("name")
+let heart3 = document.querySelector("#heart3")
 
-if (heart.getAttribute("name") == "heart-outline") {
-  heart.onclick = function () {
+function take() {
+  if (heart.getAttribute("name") == "heart-outline") {
     heart.setAttribute("name", "heart")
+  } else {
+    heart.removeAttribute("name")
+    heart.setAttribute("name", "heart-outline")
   }
 }
 
-// if (heart.getAttribute("name") == "heart") {
-//   heart.onclick = function () {
-//     heart.setAttribute("name", "heart-outline")
-//   }
-// }
-
-if (heart1.getAttribute("name") == "heart-outline") {
-  heart1.onclick = function () {
-    heart1.setAttribute("name", "heart")
-  }
-}
-
-if (heart2.getAttribute("name") == "heart-outline") {
-  heart2.onclick = function () {
+function take2() {
+  if (heart2.getAttribute("name") == "heart-outline") {
     heart2.setAttribute("name", "heart")
+  } else {
+    heart2.removeAttribute("name")
+    heart2.setAttribute("name", "heart-outline")
+  }
+}
+
+function take3() {
+  if (heart3.getAttribute("name") == "heart-outline") {
+    heart3.setAttribute("name", "heart")
+  } else {
+    heart3.removeAttribute("name")
+    heart3.setAttribute("name", "heart-outline")
   }
 }
